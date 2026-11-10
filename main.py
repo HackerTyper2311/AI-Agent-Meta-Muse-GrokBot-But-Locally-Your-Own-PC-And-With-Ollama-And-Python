@@ -23,7 +23,10 @@ def weather(city: str) -> str:
 # Use the client object exactly like the global functions
 response = client.chat(
     model='gemma4:12b',
-    messages=[{'role': 'user', 'content': 'What is the weather like in New York?'}],
+    messages=[
+        {'role': 'system', 'content': systemPrompt},
+        {'role': 'user', 'content': 'What is the weather like in New York?'},
+    ],
     tools=[weather],
 )
 
