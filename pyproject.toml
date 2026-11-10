@@ -1,0 +1,9 @@
+[project]
+name = "ai-agent-access-remotely"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "ollama>=0.6.3",
+]
